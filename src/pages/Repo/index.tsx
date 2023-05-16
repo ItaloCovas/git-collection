@@ -50,24 +50,24 @@ const Repo: React.FC = () => {
           <ul className="repository__stats">
             <li>
               <strong>{repositoryInfo?.stargazers_count}</strong>
-              <span>
+              <a href={`${repositoryInfo?.html_url}/stargazers`}>
                 <FiStar color="gold" size={20} />
                 Stars
-              </span>
+              </a>
             </li>
             <li>
               <strong>{repositoryInfo?.forks_count}</strong>
-              <span>
+              <a href={`${repositoryInfo?.html_url}/forks`}>
                 <FiGitBranch size={20} />
                 Forks
-              </span>
+              </a>
             </li>
             <li>
               <strong>{repositoryInfo?.open_issues_count}</strong>
-              <span>
+              <a href={`${repositoryInfo?.html_url}/issues`}>
                 <FiAlertCircle color="red" size={20} />
                 Issues abertas
-              </span>
+              </a>
             </li>
           </ul>
         </section>
