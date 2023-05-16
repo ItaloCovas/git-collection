@@ -74,6 +74,7 @@ const Repo: React.FC = () => {
       )}
 
       <div className="repository__issues">
+        <h2 className="issues__title">Issues:</h2>
         {issues.map((issue) => (
           <a href={issue.html_url} rel="noopener noreferrer" target="_blank" key={issue.id}>
             <div>

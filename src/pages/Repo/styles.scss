@@ -90,6 +90,10 @@
 .repository__issues {
   margin-top: 80px;
 
+  .issues__title {
+    margin-bottom: 20px;
+  }
+
   a {
     background: #fff;
     border-radius: 5px;
