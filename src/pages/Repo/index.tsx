@@ -43,7 +43,7 @@ const Repo: React.FC = () => {
           <header>
             <img src={repositoryInfo?.owner.avatar_url} alt={repositoryInfo?.owner.login} />
             <div className="repository__details">
-              <strong>{repositoryInfo?.full_name}</strong>
+              <Link to={repositoryInfo?.html_url as string}>{repositoryInfo?.full_name}</Link>
               <p>{repositoryInfo?.description}</p>
             </div>
           </header>
